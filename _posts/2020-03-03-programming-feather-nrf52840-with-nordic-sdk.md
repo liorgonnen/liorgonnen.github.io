@@ -1,11 +1,14 @@
 ---
 title: Programming Adafruit Feather nRF52840 with the Nordic SDK
 layout: single
-read_time: true
+classes: wide
 comments: true
 share: true
-related: true
+related: false
+header:
+  teaser: /assets/images/programming-feather-nrf52840-with-nordic-sdk/feather_nrf52840_1200x700.jpg
 ---
+![alt]({{ site.url }}{{ site.baseurl }}/assets/images/programming-feather-nrf52840-with-nordic-sdk/feather_nrf52840_1200x700.jpg){: .full}
 
 **This post is still going through some final editing!**
 
