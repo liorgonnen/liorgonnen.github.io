@@ -1,7 +1,6 @@
 ---
 title: Programming Adafruit Feather nRF52840 with the Nordic SDK
 layout: single
-read_time: false
 comments: true
 share: true
 classes: wide
@@ -11,11 +10,22 @@ header:
 
 ![alt]({{ site.url }}{{ site.baseurl }}/assets/images/programming-feather-nrf52840-with-nordic-sdk/feather_nrf52840_1200x700.jpg){: .full}
 
-**This post is still going through some final editing!**
 
-The goal of this post is to run through the minimal set of steps required to run a basic example from the nRF52 SDK on the [Adafruit Feather nRF52840 Express board](https://learn.adafruit.com/introducing-the-adafruit-nrf52840-feather/overview) in order to set the foundation to program the board without Arduino or the Arduino IDE.
+## Introduction
 
-The steps will be specific to Mac running OSX, but you should be able to easily do the equivalent on Windows. 
+The concept of a "Hello World" program was promulgated by Kernighan and Ritchie in *"The C Programming Language*" book. Completing such a program, in any language, means that you've accomplished the basics steps needed to start a project. Quoting the book:
+
+> This is the big hurdle; to leap over it you have to be able to create the program text somewhere, compile it successfully, load it, run it, and find out where your output went. With these mechanical details mastered, the rest is comparatively easy.
+
+This is exactly the goal of this post- to run through the minimal set of steps required to run a basic example from the nRF52 SDK on the [Adafruit Feather nRF52840 Express board](https://learn.adafruit.com/introducing-the-adafruit-nrf52840-feather/overview) in order to set the foundation to program the board without Arduino or the Arduino IDE.
+
+If you somehow managed to find your way here, I'm assuming this is exactly what you were looking for, so I'm going to skip the details about the board itself. The reason I'm writing this post is just to hopefully save the time-consuming research, trial and error I went through and hopefully get you up and running as quickly as possible. 
+
+I want to give credit to two excellent posts which this post is based on:
+1. [nRF52840 Advanced Development With the nRF5 SDK](https://learn.sparkfun.com/tutorials/nrf52840-advanced-development-with-the-nrf5-sdk/all) by Sparkfun
+2. [How to set up nRF5 SDK with ARM GCC](https://blog.makerdiary.com/how-to-set-up-nrf5-sdk-with-arm-gcc/) by Makerdiary
+
+I've basically compiled information from thesae two posts and added all the tiny details getting up and running with the Adafruit Feather so definitely check these posts as well. Especially if you're on a Windows machine, since this post will be specific to Mac running OSX.
 
 ## 1. Install GNU Make
 
