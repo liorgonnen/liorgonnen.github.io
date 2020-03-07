@@ -19,13 +19,13 @@
 # in the templates via {{ site.myvariable }}.
 
 repository: "liorgonnen/liorgonnen.github.io"
-name: Lior Gonnen - Design // Build // Make
+name: Lior Gonnen - Design // Code // Build
 title: ""
-email: your-email@example.com
+email: lior.gonnen@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Lior's blog
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "gonnen.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://gonnen.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: liorgonnen
 github_username:  liorgonnen
 logo: "/assets/images/header_logo.png"
@@ -45,7 +45,7 @@ plugins:
 markdown: kramdown
 theme: minimal-mistakes-jekyll
 # Outputting
-permalink: /:categories/:title/
+permalink: /:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 
