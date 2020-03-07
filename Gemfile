@@ -6,7 +6,8 @@ source "https://rubygems.org"
 #     bundle exec jekyll serve 
 
 gem "github-pages", group: :jekyll_plugins
-gem 'jekyll-admin', group: :jekyll_plugins
+gem "jekyll-admin", group: :jekyll_plugins
+gem "minimal-mistakes-jekyll"
 
 # Plugsin
 group :jekyll_plugins do

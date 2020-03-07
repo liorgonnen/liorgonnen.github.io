@@ -19,17 +19,15 @@
 # in the templates via {{ site.myvariable }}.
 
 repository: "liorgonnen/liorgonnen.github.io"
-title: Lior's Place
 name: Lior Gonnen
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Lior's blog
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "gonnen.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: liorgonnen
 github_username:  liorgonnen
+logo: "/assets/images/header_logo.png"
 
 include:
   - _pages
@@ -44,7 +42,7 @@ plugins:
   - jekyll-include-cache
 
 markdown: kramdown
-remote_theme: "mmistakes/minimal-mistakes@4.18.1"
+theme: minimal-mistakes-jekyll
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -91,19 +89,19 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: home
       author_profile: false
       read_time: true
       comments: true
       share: true
-      related: true
+      related: false
   # _pages
   - scope:
       path: "_pages"
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
